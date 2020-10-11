@@ -1,0 +1,31 @@
+{
+  "name": "blake_portfolio",
+  "version": "1.0.0",
+  "description": "Blake's portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zombieman1041/Blake_Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "heroku"
+  ],
+  "author": "BlakeDayman",
+  "license": "ISC",
+  
+  "bugs": {
+    "url": "https://github.com/zombieman1041/Blake_Portfolio/issues"
+  },
+  "homepage": "https://github.com/zombieman1041/Blake_Portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "12.16.1"
+  }
+
+}
