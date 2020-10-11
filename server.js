@@ -1,8 +1,15 @@
 const express = require('express');
 const app = express();
-module.exports = app;
 
-var path = require('path');
+app.set('port', (process.env.PORT || 8000));
+
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', function(request, response){
+    response.render('index.html');
+});
+
+module.exports = app;
 
 //port will look for the heroku deploy or locally on port 9000
 // port = process.env.PORT || 8080;
@@ -12,9 +19,7 @@ var path = require('path');
 //     console.log('Application is listening on 8080')
 // });
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-  console.log('Application is running')
-}
-app.listen(port);
+
+app.listen(app.get('port'), function(){
+    console.log('Node app is running on port', app.get('port'))
+});
