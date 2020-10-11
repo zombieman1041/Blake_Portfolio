@@ -1,25 +1,31 @@
-const express = require('express');
-const app = express();
+var static = require('node-static');
+var http = require('http');
 
-app.set('port', (process.env.PORT || 8000));
+var port = process.env.PORT;
+var directory = __dirname + '/public';
 
-app.use(express.static(__dirname + '/public'));
+var file = new static.Server('./public');
 
-app.get('/', function(request, response){
-    response.render('index.html');
-});
+// if we arent on heroku then we need to readjust the port and directory information and we know that because the port wont be set
+if(typeof port == 'undefined' || !port){
+    directory = './public';
+    port = 8080;
+}
 
-module.exports = app;
+// set up static web server that will deliver files from the filesystem
+var file = new static.Server(directory);
 
-//port will look for the heroku deploy or locally on port 9000
-// port = process.env.PORT || 8080;
+// construct an http server that gets files from the file server
+var app = http.createServer(function(request,response){
+    request.addListener('end', 
+    function(){
+        file.serve(request,response);
+    }
+    ).resume();
+}
+).listen(port);
+console.log('The server is running');
 
 
-// app.listen(port, function(){
-//     console.log('Application is listening on 8080')
-// });
 
 
-app.listen(app.get('port'), function(){
-    console.log('Node app is running on port', app.get('port'))
-});
