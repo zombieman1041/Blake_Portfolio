@@ -4,6 +4,7 @@
   "description": "Blake's portfolio",
   "main": "app.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +17,6 @@
   ],
   "author": "BlakeDayman",
   "license": "ISC",
-  
   "bugs": {
     "url": "https://github.com/zombieman1041/Blake_Portfolio/issues"
   },
@@ -27,5 +27,4 @@
   "engines": {
     "node": "12.16.1"
   }
-
 }
