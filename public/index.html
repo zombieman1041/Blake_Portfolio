@@ -8,24 +8,34 @@
         <link rel="stylesheet" href="main.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <title>Blake Dayman Portfolio</title>
     </head>
-    <body>
-        <div class="jumbotron-fluid text-center bg-dark text-white pt-2 pb-2">
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <div id="questions" class="jumbotron-fluid text-center bg-dark text-white pt-2 pb-2">
             <div class="container">
               <h1>Blake Dayman Portfolio</h1>  
             </div>
             
         </div>
-        <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center sticky-top">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#aboutme">About Me</a>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#questions">Portfolio Questions</a>
-              </li>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Portfolio Questions
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#questions">Introduction</a>
+                        <a class="dropdown-item" href="#part1">Part One</a>
+                        <a class="dropdown-item" href="#part2">Part Two</a>
+                        <a class="dropdown-item" href="#part3">Part Three</a>
+                        <a class="dropdown-item" href="#part4">Part Four</a>
+                        <a class="dropdown-item" href="#part5">Part Five</a>
+                  </div>
+            </li>
               <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
@@ -39,14 +49,21 @@
             </ul>
           </nav>
           <div id="aboutme"class="container-md">
-            <h3>About Me</h3>
+            <h3 class="display-4">About Me</h3>
             ...
           </div>
           <div id="questions"class="container-md">
-            <h3>Portfolio Questions</h3>
-            <h5>Introduction</h5>
-            Westmont Downtown proposed these questions for me as a Westmont Downtown student to highlight my personal journey and the major motivations that have influenced my life. This program is a Westmont College off-campus program that equips its students with skills for the business world and life through tailored mentoring, empathetic collaboration, community engagement, and creative challenges.             
-            <br><br><h5>Part One—I Contain Multitudes</h5>
+            <h3 class="display-4">Portfolio Questions</h3>
+            <h5 id="part1">Introduction</h5>
+            <p>
+                Westmont Downtown proposed these questions for me as a Westmont Downtown student to highlight my personal journey and the major motivations that have influenced my life. This program is a Westmont College off-campus program that equips its students with skills for the business world and life through tailored mentoring, empathetic collaboration, community engagement, and creative challenges.             
+
+            </p>
+            <br><br>
+            <div id="">
+                <h5>Part One—I Contain Multitudes</h5>
+            </div>
+            
             
 <b>1. What is your experience with giving back to others in your community? Have you ever been involved in any campaigns to make a difference in the world?</b>
             <br><br>
@@ -65,7 +82,10 @@ I use my skills in my day to day life when approaching daily problems. I like to
             <br><br><b>
             3. What are you grateful for? Record 3 to 5 things for which you give thanks: good things that happened to you today, things that you normally take for granted. 
             <br><br></b>
-By the end of this week, I see that I am grounded In who I am as a person and I use the what has happened In the past to help me learn and prepare for the future with a positive and healthy attitude. I take relationships very seriously and with those relationships as a source of support I can take on the world head first. 
+            <p id="part2">
+                By the end of this week, I see that I am grounded In who I am as a person and I use the what has happened In the past to help me learn and prepare for the future with a positive and healthy attitude. I take relationships very seriously and with those relationships as a source of support I can take on the world head first. 
+
+            </p>
             <br><br><h5>Part Two—Reading the Whole Story</h5>
             <b>
 4. What matters most in your life? What are the things that you value more than anything else in the world? Narrow down this list to two primary values. Are you living consistently with these values? Are you spending most of your time on the things that really matter deeply to you?
@@ -87,7 +107,11 @@ What matters most In my life Is my relationship with God and His plan on how he 
 I have inspired people through my relationships I have developed with those that I have met through my bright personality and my efforts to reflect who Jesus is as a follower of Christ. I cant explain why throughout my life people have just been attracted to me but I definitely feel blessed to have many friends in my life. Some things that I have done that was uplifting and inspiring are the projects I did in the APP Academy, the music I performed in the Jazz band, and my involvement in 3rd Tuesday and the SSA organization. The list I created was inspiring for me because they all contributed towards teamwork and activities that are important to society and myself. 
 <br><br><b>
 6. What gives you the greatest sense of fulfillment, personal satisfaction, and self-esteem? Why? When are you so engaged and absorbed in an activity that time seems to stop? What are the times in your life when everything seems to flow, and you are in “the zone”? What are the things that you do that give you the greatest returns on happiness, productivity, and contribution? 
-<br><br></b>Friends, family, social gatherings like movies, games, restaurants etc. These things give me the greatest sense of fulfillment, personal satisfaction, and self-esteem because I appreciate others company and definitely feel time flies when I’m around those I feel comfortable with.
+<br><br></b>
+<p id="part3">
+    Friends, family, social gatherings like movies, games, restaurants etc. These things give me the greatest sense of fulfillment, personal satisfaction, and self-esteem because I appreciate others company and definitely feel time flies when I’m around those I feel comfortable with.
+
+</p>
 
             <br><br><h5>Part Three—The Things Residual</h5> 
             <b>
@@ -107,7 +131,10 @@ Blake
 <br><br><b>
 9. What have been your favorite creative inspirations throughout your life? What are the books, movies, art works, songs, or other hobbies and creative activities that you have most enjoyed? How do they shape who you are today? 
 <br><br></b>
-Music has been a creative inspiration throughout my life. I always loved music and during middle school I found an instrument that finally called out to me. This instrument was the electric bass. I played the electric bass in a middle school rock band and continued in high school through the school’s jazz band. It’s a dedicated hobby of mine and has additionally contributed to my love for music. I love a majority of music from jazz, to rock, to electronic music. It helps me focus and also is a major outlet to let out stress through jam sessions, concerts, raves, and just another way to hang out with friends.  
+<p id="part4">
+    Music has been a creative inspiration throughout my life. I always loved music and during middle school I found an instrument that finally called out to me. This instrument was the electric bass. I played the electric bass in a middle school rock band and continued in high school through the school’s jazz band. It’s a dedicated hobby of mine and has additionally contributed to my love for music. I love a majority of music from jazz, to rock, to electronic music. It helps me focus and also is a major outlet to let out stress through jam sessions, concerts, raves, and just another way to hang out with friends.  
+
+</p>
             <br><br><h5>Part Four—Living the Questions</h5> <b>
 10. Identify both fears and idols that hold you back from understanding what God has for you. When things fall apart, what do you do to “keep things together?” Reflect on how to incorporate this information into your life to achieve your full potential. 
             <br><br></b>
@@ -159,12 +186,15 @@ Home
 <br><br><b>
 Work
 <br><br></b>
-•	Be loyal<br>
-•	Set goals <br>
-•	Pursue Knowledge<br>
-•	Strive for success 
+<p id="part5">
+    •	Be loyal<br>
+    •	Set goals <br>
+    •	Pursue Knowledge<br>
+    •	Strive for success 
+</p>
 
-            <br><br><h5>Five—Tell It Slant</h5> 
+
+            <br><br><h5>Part Five—Tell It Slant</h5> 
             <b>
 14. Construct your wayfinding map in which you trace some of the most significant “engagements” in your life over the last few years, and how they relate to each other.
             <br><br></b>
@@ -189,15 +219,15 @@ My vision on how I would like to make a difference in the world would be in the 
 
           </div> <br>
           <div id="projects"class="container-md">
-            <h3>Projects</h3>
+            <h3 class="display-4">Projects</h3>
             ...
           </div>
           <div id="resume"class="container-md">
-            <h3>Resume</h3>
+            <h3 class="display-4">Resume</h3>
             ...
           </div>
           <div id="contact"class="container-md">
-            <h3>Contact</h3>
+            <h3 class="display-4">Contact</h3>
             ...
           </div>
 
