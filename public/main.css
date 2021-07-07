@@ -5,3 +5,8 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+footer{
+    margin-top: 10px;
+    height: 100px;
+    background-color: #626567;
+}
