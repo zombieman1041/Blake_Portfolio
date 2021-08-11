@@ -36,3 +36,8 @@ a {
     -webkit-transition: 200ms;
     -webkit-transition-timing-function: ease-in-out;
   }
+
+  #portrait{
+      height: 50%;
+      width: 50%;
+  }
