@@ -2,6 +2,9 @@
     padding-top: 100px;
     padding-bottom: 100px;
 } */
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -37,7 +40,44 @@ a {
     -webkit-transition-timing-function: ease-in-out;
   }
 
-  #portrait{
+#portrait{
       height: 50%;
       width: 50%;
-  }
+}
+/* desktop */
+@media only screen and (min-width: 992px) {
+.navbar-toggler{
+    display: none;
+}
+}
+/* tablet */
+@media only screen and (max-width: 1024px) {
+	.navbar-toggler{
+        display: none;
+    }
+    .text-decoration-none{
+        display: inline-block;
+    }
+}
+/* phone */
+@media only screen and (max-width: 767px) {
+    #mobileLink{
+        display: none;
+    }
+    .navbar-toggler{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+    }
+    .mobile{
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+    #close{
+        display: none;
+    }
+}
