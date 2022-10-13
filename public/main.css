@@ -51,17 +51,51 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    opacity: 1;
+    font-size: 25px;
+    font-weight: 250;
 }
 #AOI{
-    background-image: url("images/volunteer.jpg");
+    background-image: url("images/AOI.jpg");
+    background-color: rgba(255 255 255 / 2%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     border-radius: 25px;
-
-    
+    height: 150px;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 250ms;
+    opacity:0.6;
 }
+#AOI:hover{
+    opacity: 1;
+}
+#AOI-toggle{
+    display: none;
+}
+#volunteer-toggle{
+    display: none;
+}
+#volunteer{
+    background-image: url("images/volunteer.jpg");
+    background-color: rgba(255 255 255 / 2%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    height: 150px;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 250ms;
+    opacity:0.6;
+}
+#volunteer:hover{
+    opacity: 1;
+}
+
 /* desktop */
 @media only screen and (min-width: 992px) {
 .navbar-toggler{
