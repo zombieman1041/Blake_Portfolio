@@ -71,6 +71,9 @@ ul.aboutUL{
     outline: none;
     transition: opacity 250ms;
     opacity:0.6;
+    animation-name: hoverAnim;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
 }
 #skills:hover{
     opacity: 1;
@@ -88,6 +91,9 @@ ul.aboutUL{
     outline: none;
     transition: opacity 250ms;
     opacity:0.6;
+    animation-name: hoverAnim;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
 }
 #college:hover{
     opacity: 1;
@@ -111,8 +117,8 @@ ul.aboutUL{
     transition: opacity 250ms;
     opacity:0.6;
     animation-name: hoverAnim;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
 }
 #AOI:hover{
     opacity: 1;
@@ -131,6 +137,9 @@ ul.aboutUL{
     outline: none;
     transition: opacity 250ms;
     opacity:0.6;
+    animation-name: hoverAnim;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
 }
 #volunteer:hover{
     opacity: 1;
