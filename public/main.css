@@ -39,11 +39,112 @@ a {
     -webkit-transition: 200ms;
     -webkit-transition-timing-function: ease-in-out;
   }
-
+ul.aboutUL{
+    display: inline-block;
+    text-align: left;
+}
 #portrait{
       height: 50%;
       width: 50%;
 }
+.about_text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    font-size: 45px;
+    font-weight: 250;
+}
+#skills{
+    background-image: url("images/skills.jpg");
+    background-color: rgba(255 255 255 / 2%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    height: 275px;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 250ms;
+    opacity:0.6;
+    animation-name: hoverAnim;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+#skills:hover{
+    opacity: 1;
+}
+#college{
+    background-image: url("images/college.jpg");
+    background-color: rgba(255 255 255 / 2%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    height: 275px;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 250ms;
+    opacity:0.6;
+    animation-name: hoverAnim;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+#college:hover{
+    opacity: 1;
+}
+@keyframes hoverAnim {
+    0% {opacity: 0.6; transition: opacity 250ms;}
+    50% {opacity: 1; transition: opacity 250ms;}
+    100% {opacity: 0.6; transition: opacity 250ms;}
+}
+#AOI{
+    background-image: url("images/AOI.jpg");
+    background-color: rgba(255 255 255 / 2%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    height: 275px;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 250ms;
+    opacity:0.6;
+    animation-name: hoverAnim;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+#AOI:hover{
+    opacity: 1;
+}
+
+#volunteer{
+    background-image: url("images/volunteer.jpg");
+    background-color: rgba(255 255 255 / 2%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    height: 275px;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 250ms;
+    opacity:0.6;
+    animation-name: hoverAnim;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+#volunteer:hover{
+    opacity: 1;
+}
+
 /* desktop */
 @media only screen and (min-width: 992px) {
 .navbar-toggler{

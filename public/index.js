@@ -14,4 +14,17 @@ function mobileMenu() {
       y.style.display = "none";
 
     }
-  }
+}
+
+// setInterval(aboutHover, 1000);
+// function aboutHover(){
+//   var x = document.getElementById("");
+//   x.style.transition = "opacity 250ms";
+//   x.style.opacity = "1"; 
+
+//   setTimeout(myTimeout, 1000);
+//   function myTimeout(){
+//     var x = document.getElementById("");
+//     x.style.opacity = "0"; 
+//   }
+// }
