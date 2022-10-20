@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="DungeonStyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Righteous&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg" onload="swapAreaOne()">
+            <div id="music">
+                    <div>
+                        <p class="settingText">
+                            <b>Music</b>
+                        </p>
+                            <audio controls loop id="inline">
+                                <source src="music/bgmusic.mp3" type="audio/mpeg" />
+                            </audio>
+                        <p class = "settingText" id="inline3">
+                            <b>Fullscreen</b>
+                        </p>
+                            <input id="inline2" type="button" name="Fullscreen" value="Activate" onclick="fullscreen()">
+                    </div>
+                </div>
+                <input id="settings" type="button" name="Settings" value="Settings" onclick="playMusic('music')">
+
+                <div class="container" id = "content" >
+                    <div>
+                        <img class = "image" id="Screen" src = "areaPics/area01.jpg"> 
+                        <p class="StoryText" id="StoryText">text</p>
+
+                        <div> 
+                            <a class = "restart" id = "restart" href = "StartScreen.html" style = "visibility:hidden;">Restart?</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="buttons">
+                    <div class = "popup" id="button1" >
+                        <button class="button option1" onmouseover="popUpFun()" onmouseout="popUpFun()" onclick="swapAreaOne()">Option 1</button>
+                        <div>
+                            <p class="popUpText" id ="myPopup">A simple Popup!</p>
+                        </div>
+                    </div>
+                    <div class = "popup" id="button2">
+                        <button class="button option2" onmouseover="popUpFunTwo()" onmouseout="popUpFunTwo()" onclick="swapAreaTwo()">Option 2</button>
+                        <div>
+                            <p class="popUpText" id ="myPopup2">A simple Popup!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="settingText" id="stats">
+                    <div id="stat1">
+                        <h3>Usurper</h3>
+                            <div id="Usurper">
+        
+                            </div>
+                    </div>
+                    <div id="stat2">
+                        <h3>Rat</h3>
+                        <div id="Rat">
+                        </div>
+                    </div>
+                    <div id="stat3">
+                        <h3>Deceiver</h3>
+                            <div id="Deceiver">
+                            </div>
+                    </div>
+                </div>
+    </body>
+    <script type="text/javascript" src="music.js"></script>
+    <script type="text/javascript" src="areas.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</html>

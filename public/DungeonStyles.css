@@ -1,0 +1,268 @@
+#prologue{
+  font-size: x-large;
+  font-family: 'Courgette', cursive;
+  color: lightskyblue;
+  background-color: #555;
+}
+.StartScreen{
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.buttons{
+  text-align: center;
+
+}
+#music{
+  display: none;
+}
+.bg{
+  background-image: url('areaPics/bgimg.jpg');
+}
+
+.StoryText{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  width: 95%;
+  font-family: 'Courgette', cursive;
+  /* font-family: 'Righteous', cursive; */
+
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: Trattatello, fantasy
+}
+.image{
+    height: 100%;
+    width: 100%;
+}
+
+.centered{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    font-family: 'Righteous', cursive;
+
+}
+.play{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    background-color: #FF5D00;
+    border-style: outset;
+    color: white;
+    width: 10%;
+    height: 5%;
+    padding-top: 10px;
+}
+
+.button{
+    	padding: 16px 32px;
+        text-align: center;
+        border: 1px solid #000000;
+        padding-bottom: 10px;
+        background-color: white;
+        margin: 20px 40px;
+        font-size: 16px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'Righteous', cursive;
+      }
+.option1{
+  background-color: lightskyblue;
+}
+.option1:hover{
+  background-color: white;
+}
+.option2:hover{
+  background-color: white;
+}
+.option2{
+  background-color: #FFBE89;
+}
+/* This is the popup */
+/* .popup */ .popUpText {
+  visibility: hidden;
+  width: 200px;
+  height: 50px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 7px;
+  padding: 8px;
+  /* bottom: 55%;
+  left: 16%; */
+}
+
+/*.popup */ .popUpText2{
+  visibility: hidden;
+  /* width: 10px; */
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 7px;
+  padding: 8px;
+  /* bottom: 43%;
+  left: 16%; */
+}
+
+/* The Popup carrot is a seperate thing so thats annoying */
+/* .popup .popUpText::after {
+  content: "";
+  position: absolute;
+  /* top: 40%;
+  left: -5.5%; */
+  /* transform: rotate(90deg);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+} */
+/** I dont know how to declare these on the same line so for now they are 2 different things**/
+.popup .popUpText2::after {
+  content: "";
+  position: absolute;
+  /* top: 30%;
+  left: -5.5%; */
+  transform: rotate(90deg);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+
+.restart{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  background-color:red;
+  border-style: outset;
+  color: black;
+  padding: 10px 10px;
+}
+
+.settingText{
+  color: white;
+  
+}
+
+.stats{
+  /* align-items: center; */
+    position: relative;
+    bottom: 45%;
+    left: 10px;
+    margin-top: -100%;
+    padding-top: 5px;
+    padding-bottom: 20%;
+    /* display: inline;
+    float: left; */
+  }
+
+#stat1 {
+  margin-left: 3%;
+  float:left;
+  margin-top: 85px;
+  margin-bottom: 30px;;
+  /* padding-top: 70px; */
+  /* padding: 50px 0px 10px 0px 0px; */
+  padding-left: 10px;
+  padding-bottom: 20px;
+  font-family: 'Righteous', cursive;
+  background-color: #555 ;
+  width: 120px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+#stat2 {
+  float:left;
+  margin-top: 85px;
+  /* padding-right: 2%; */
+  padding-bottom: 20px;
+  font-family: 'Righteous', cursive;
+  background-color: #555 ;
+  width: 120px;
+
+}
+#stat3 {
+  float:left;
+
+  padding-right: 10px;
+  padding-bottom: 20px;
+  margin-top: 85px;
+  font-family: 'Righteous', cursive;
+  background-color: #555 ;
+  width: 120px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+
+#button1 {
+  position: relative;
+  font-family: 'Righteous', cursive;
+
+  /* margin: 5% 0% 5% 10%;
+  width: 50%; */
+  float: left;
+}
+#button2 {
+  position: relative;
+  font-family: 'Righteous', cursive;
+
+  /* margin: 5% 5% 0% 10%;
+  width: 50%; */
+  /* margin: 0% 0% 0% -25%; */
+  float:left;
+}
+
+/* .liststat{
+  float: left;
+  padding-left: 35%;
+} */
+#inline{
+margin: auto;
+float: left;
+}
+#inline2{
+position: relative;
+bottom: 0px;
+float: left;
+
+  /* padding: 0px 0px 0px 100px; */
+}
+#inline3{
+  position: relative;
+  bottom: 50px;
+  float: left; 
+}
+#settings{
+  position: relative;
+  right: 0px;
+  margin-right: 500px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  /* padding: 10px 0px 0px 10px; */
+}
+
+    
