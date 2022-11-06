@@ -1,4 +1,5 @@
-// create Usurper classwith getter and setter
+// javascript for ETD project
+// create Usurper class with getter and setter
 class Usurper{ 
     constructor(likeability, health, power){
         this.Usurperlikeability = likeability;

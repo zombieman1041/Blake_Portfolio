@@ -7,19 +7,19 @@
     </head>
     <body class="bg" onload="swapAreaOne()">
             <div id="music">
-                    <div>
-                        <p class="settingText">
-                            <b>Music</b>
-                        </p>
-                            <audio controls loop id="inline">
-                                <source src="music/bgmusic.mp3" type="audio/mpeg" />
-                            </audio>
-                        <p class = "settingText" id="inline3">
-                            <b>Fullscreen</b>
-                        </p>
-                            <input id="inline2" type="button" name="Fullscreen" value="Activate" onclick="fullscreen()">
-                    </div>
+                <div>
+                    <p class="settingText">
+                        <b>Music</b>
+                    </p>
+                    <audio controls loop id="inline">
+                        <source src="music/bgmusic.mp3" type="audio/mpeg" />
+                    </audio>
+                    <p class = "settingText" id="inline3">
+                        <b>Fullscreen</b>
+                    </p>
+                        <input id="inline2" type="button" name="Fullscreen" value="Activate" onclick="fullscreen()">
                 </div>
+            </div>
                 <input id="settings" type="button" name="Settings" value="Settings" onclick="playMusic('music')">
 
                 <div class="container" id = "content" >
@@ -66,8 +66,8 @@
                     </div>
                 </div>
     </body>
-    <script type="text/javascript" src="music.js"></script>
-    <script type="text/javascript" src="areas.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="dungeon_js/music.js"></script>
+    <script type="text/javascript" src="dungeon_js/areas.js"></script>
+    <script type="text/javascript" src="dungeon_js/main.js"></script>
 
 </html>
