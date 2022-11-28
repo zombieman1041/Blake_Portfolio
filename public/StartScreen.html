@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="DungeonStyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Righteous&display=swap" rel="stylesheet">
+
+        <script type="text/javascript" src="dungeon_js/music.js"></script>
+    </head>
+    <body class="bg">
+        <div id="music">
+            <div>
+                <p class="settingText">
+                    <b>Music</b>
+                </p>
+                    <audio controls loop id="inline">
+                        <source src="music/menuSong.mp3" type="audio/mpeg" />
+                    </audio>
+                <p class = "settingText" id="inline3">
+                    <b>Fullscreen</b>
+                </p>
+                    <input id="inline2" type="button" name="Fullscreen" value="Activate" onclick="fullscreen()">
+            </div>
+        </div>
+        <input id="settings" type="button" name="Settings" value="Settings" onclick="playMusic('music')">
+        <!-- <button onclick="playMusic()" -->
+            <div>
+                <div class="container" id = "content" >
+                    <div>
+                        <img class ="image" id="StartScreen" src="areaPics/dungeonMenu.jpg"> 
+                        <div class="centered" id="title">Escape The Dungeon</div>
+                        <!--TODO: add tutorial text-->
+                        
+                        <div><a class="play" href="EscapeTheDungeon.html" >Start Game</a></div>
+                    </div>
+                    <p id="prologue">In a dark, damp, and crowded cell, three strangers wake up next to each other. All bear wounds of 
+                        combat, but can only recall vague memories of the night before. As the expected questions arise: 
+                        where am I, who are you, how did we get here, and memories return, they piece together their 
+                        circumstance. They learn that they are each members of a secret resistance against the throne ...
+                        enemies of the king... and soon realize that their party of three must be the sole survivors of the 
+                        failed and final attempt to seize the throne from the Tyrant king, by the resistance. The abnormally 
+                        agile Rat, the stunningly strong Usurper, and the insidiously intelligent Deceiver, quickly 
+                        understand that they must work together if they wish to escape before their execution. </p>
+                </div>
+            </div>
+
+
+    </body>
+</html>
