@@ -1,3 +1,4 @@
+// variables to set up static web server
 var static = require('node-static');
 var http = require('http');
 
@@ -25,8 +26,6 @@ var app = http.createServer(function(request,response){
 }
 ).listen(port);
 console.log('The server is running');
-
-
 
 //sets up web socket server
 
