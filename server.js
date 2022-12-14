@@ -1,5 +1,5 @@
-require('dotenv').config();
-const snoowrap = require('snoowrap');
+
+  
 
 // variables to set up static web server
 var static = require('node-static');
@@ -30,17 +30,8 @@ var app = http.createServer(function(request,response){
 ).listen(port);
 console.log('The server is running');
 
-const r = new snoowrap({
-    userAgent: 'bdayman-blog',
-    clientId: process.env.RedditclientId,
-    clientSecret: process.env.RedditclientSecret,
-    username: process.env.Redditusername,
-    password: process.env.Redditpassword,
-    refreshToken: process.env.RedditrefreshToken
-});
-
-// Printing a list of the titles on the front page
-r.getHot().map(post => post.title).then(console.log);
+// TODO: Use jquery built in XML support to parse Reddit RSS Feed
+// $.get()
 
 //sets up web socket server
 

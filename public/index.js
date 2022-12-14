@@ -1,3 +1,5 @@
+
+
 function mobileMenu() {
     var x = document.getElementById("mobileLink");
     var y = document.getElementById("close");
@@ -15,6 +17,9 @@ function mobileMenu() {
 
     }
 }
+
+
+
 
 // setInterval(aboutHover, 1000);
 // function aboutHover(){
