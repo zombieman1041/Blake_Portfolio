@@ -4,11 +4,7 @@
 } */
 
 
-/* begin styles for RSS Feed */
-
-h2 { color: maroon; font-size: 170%; text-decoration: none ; font-weight: bold; font-family: FontName, Tahoma }
-
-h3 { color: maroon; font-size: 140%; text-decoration: none ; font-weight: bold; text-indent: 5em; font-family: FontName, Tahoma }
+/* RSS Feed */
 
 .rss-box { background-color: white; margin: 10px 15%; padding: 4px 8px; border: solid 5px maroon }
 
