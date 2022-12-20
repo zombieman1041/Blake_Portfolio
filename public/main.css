@@ -5,7 +5,12 @@
 
 
 /* RSS Feed */
-
+.blog_logo{
+    max-height: 100px;
+    max-width: 100px;
+    padding-right: 25px;
+    text-decoration: none;
+}
 .rss-box { background-color: white; margin: 10px 15%; padding: 4px 8px; border: solid 5px maroon }
 
 .rss-title, rss-title a { font-size: 120%; font-family: FontName, Tahoma; font-weight: bold; letter-spacing: 1px; margin: 5px 0; padding: 0 }
