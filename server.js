@@ -1,3 +1,7 @@
+
+  
+
+// variables to set up static web server
 var static = require('node-static');
 var http = require('http');
 
@@ -26,7 +30,8 @@ var app = http.createServer(function(request,response){
 ).listen(port);
 console.log('The server is running');
 
-
+// TODO: Use jquery built in XML support to parse Reddit RSS Feed
+// $.get()
 
 //sets up web socket server
 
